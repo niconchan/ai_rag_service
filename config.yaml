@@ -1,0 +1,20 @@
+milvus:
+  host: localhost
+  port: 19530
+  collection_name: documents
+
+ray:
+  address: auto
+  num_cpus: 4
+
+embedding:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  device: cpu
+  batch_size: 32
+
+chunk:
+  chunk_size: 512
+  overlap: 50
+
+pdf:
+  max_workers: 4
